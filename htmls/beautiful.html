@@ -3,6 +3,7 @@
   <head>
     <title>CSS- Cascading Style Sheet</title>
     <style>
+      /* Class 01 & 02*/
       h1 {
         color: rgb(255, 0, 0);
       }
@@ -13,18 +14,97 @@
       h3 {
         color: blue;
       }
-      a {
+      .button {
         text-decoration: none;
         padding: 10px 20px;
         background-color: tomato;
         color: White;
         font-weight: bold;
       }
+      /* Class 03*/
+      div p {
+        height: 90px;
+        color: White;
+        font-size: 25px;
+        font-weight: 800;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      img {
+        width: 50%;
+      }
+      /* Class 04 - Usage of "id" Selector*/
+      #snow {
+        font-size: 40px;
+        color: green;
+        font-weight: 700;
+      }
+      #details {
+        width: 600px;
+        background-color: rgb(0, 0, 0);
+      }
+
+      /* Class 05 - Usage of "class" Selector*/
+      .friends {
+        width: 650px;
+        background-color: darkslategray;
+        color: whitesmoke;
+      }
+      h1.friends {
+        color: aqua;
+      }
+      .tolaram {
+        background-color: aqua;
+        width: 200px;
+      }
+      .versity {
+        font-weight: 500;
+        font-size: 25px;
+      }
+
+      /* Class 06 - Span, blog div */
+      .myname {
+        font-size: 50px;
+      }
+      .diffrent {
+        color: tomato;
+      }
+      .blog {
+        background-color: gray;
+        width: 80%;
+      }
+
+      /* Class 07 & 08 - Border, Margin, Padding */
+      .blog2 p {
+        background-color: white;
+        color: black;
+      }
+      .blog2 {
+        border: 2px solid red;
+        border-radius: 20px;
+        margin: 40px 20px;
+        padding: 20px 0 0 30px;
+      }
+      .css-box-model p {
+        background-color: unset;
+        color: black;
+      }
+      .css-box-model {
+        border: 20px solid red;
+        width: 500px;
+        height: 200px;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      
     </style>
   </head>
   <body>
-    <br>
-    <a href="index.html">Go to home</a>
+    <!-- Class 01 and 02 -->
+    <br />
+    <a class="button" href="https://smdphero.github.io/All-HTMLandCSS-Tasks/"
+      >Go to home</a
+    >
     <br />
     <h1>Adding Makeup For the first time ↓</h1>
     <h3>3 Ways To use CSS:</h3>
@@ -59,5 +139,66 @@
     <h1>Calling Tag for use CSS</h1>
     <h1>1 Call Tag for use all same tag to color in CSS</h1>
     <p>Bangladesh is the land of rivers</p>
+
+    <!-- Class 03 -->
+    <div>
+      <p>Bangladesh</p>
+    </div>
+    <img src="/images/FrostWaterOrnament.jpg" alt="ImageOfSnowFlake" />
+
+    <!-- Class 04 - Usage of "id" Selector-->
+    <p id="snow">Feeling Cold Like Never Before.</p>
+    <p id="details">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sequi
+      iure magni amet laboriosam, cum hic recusandae quae dolorum excepturi
+    </p>
+
+    <!-- Class 05 - Usage of "class" Selector-->
+    <h1 class="friends">Friends List By College.</h1>
+    <p class="friends">Jashim, Al-amin, ,Asha, Rinki</p>
+    <p class="friends">Govt. Kadam Rasul College.</p>
+    <p class="tolaram">With Rinki Tolaram</p>
+    <p class="versity tolaram">Govt. Tolaram College.</p>
+
+    <!-- Class 06 -->
+    <p class="myname">Shekh MD Nayem <span class="diffrent">Yousuf</span></p>
+
+    <div class="blog">
+      <h3 class="kuakata">By Launch</h3>
+      <p class="kuakata">Barishal Launch is very very boro.</p>
+    </div>
+    <div class="blog">
+      <h3 class="kuakata">By Train</h3>
+      <p class="kuakata">
+        Chittagang Railway is very very Long. about 10 hours.
+      </p>
+    </div>
+    <div class="blog">
+      <h3>Potengga</h3>
+      <p>Journey by Bus with Jas And Alamin AF</p>
+    </div>
+
+    <!-- Class 07 & 08 Border, Margin, Padding  -->
+    <div class="blog2">
+      <h3 class="kuakata">By Launch</h3>
+      <p class="kuakata">Barishal Launch is very very boro.</p>
+    </div>
+    <div class="blog2">
+      <h3 class="kuakata">By Train</h3>
+      <p class="kuakata">
+        Chittagang Railway is very very Long. about 10 hours.
+      </p>
+    </div>
+    <div class="blog2">
+      <h3>Potengga</h3>
+      <p>Journey by Bus with Jas And Alamin AF</p>
+    </div>
+
+    <div class="css-box-model">
+      <p>Box-1</p>
+    </div>
+    <div class="css-box-model">
+      <p>Box-2</p>
+    </div>
   </body>
 </html>
