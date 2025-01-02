@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Module: Pseduo Class and Elements...</title>
+    <style>
+      .button {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: tomato;
+        color: White;
+        font-weight: bold;
+      }
+      /* CSS Module 2 (Class-01): Pseudoclass part hover all elements, hover special */
+      h1 {
+        color: goldenrod;
+      }
+      h1:hover {
+        color: gray;
+      }
+      .special:hover {
+        color: tomato;
+        font-size: 40px;
+        background-color: aqua;
+      }
+      /* CSS Module 2 (Class-02): Pseudo class focus first child, last child, nth child, visited */
+      input:focus {
+        font-weight: 700;
+        color: tomato;
+      }
+      li {
+        width: 200px;
+      }
+      li:first-child {
+        background-color: lightblue;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      li:last-child {
+        background-color: blue;
+        color: rgb(197, 197, 197);
+        font-style: italic;
+      }
+      /*
+      for even number use: 2n
+      for odd number use: 2n+1
+      ↓
+        */
+      li:nth-child(2n + 1) {
+        background-color: darkgray;
+        color: black;
+      }
+      .visit:visited {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /* CSS Module 2 (Class-01): Pseudoclass part hover all elements, hover special */ -->
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="special">Vodro Class</h1>
+
+    <!-- /* CSS Module 2 (Class-02): Pseudo class focus first child, last child, nth child, visited */ -->
+    <input name="email" type="text" />
+    <br />
+    <input name="password" type="text" />
+
+    <ul>
+      <li>Alia</li>
+      <li>Dalia</li>
+      <li>Malia</li>
+      <li>Salia</li>
+      <li>Jalaiya</li>
+      <li>Kaliya</li>
+      <li>Falaiya</li>
+      <li>Nola</li>
+    </ul>
+
+    <a class="visit" target="_blank" href="https://www.fb.com/learnersit.bd">
+      Company Page</a
+    >
+    <br />
+    <a class="visit" target="_blank" href="https://www.fb.com/shekhmdnayem">
+      User Page</a
+    >
+    <br /><br />
+
+    <!-- links Only -->
+    <a class="links" href="#">All Links:</a>
+    <br /><br />
+    <a class="button" href="https://smdphero.github.io/All-HTMLandCSS-Tasks/"
+      >Go to home</a
+    >
+  </body>
+</html>

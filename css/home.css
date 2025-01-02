@@ -9,3 +9,31 @@
   text-align: center;
   margin: 5px;
 }
+/* Class 09 Text-Align, Float, Display, inline, Inline-block, External-CSS */
+.displayOption p {
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  text-align: justify;
+}
+.displayOption h3 {
+  text-align: center;
+}
+.displayOption {
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 1%;
+  width: 30%;
+  display: inline-block;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: tomato;
+  color: White;
+  font-weight: bold;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
